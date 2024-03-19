@@ -1,0 +1,37 @@
+{
+  "name": "@crewdle/mist-connector-rxdb",
+  "version": "1.0.9",
+  "description": "A Crewdle Mist connector to use RxDB as a Key-Value Database",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "webpack build --mode=production && mv src/index.d.ts dist/index.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crewdle/mist-connector-rxdb.git"
+  },
+  "author": "Crewdle Technologies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crewdle/mist-connector-rxdb/issues"
+  },
+  "homepage": "https://github.com/Crewdle/mist-connector-rxdb#readme",
+  "dependencies": {
+    "rxdb": "^15.12.0",
+    "uuid": "^9.0.1"
+  },
+  "peerDependencies": {
+    "@crewdle/web-sdk": "^0.1.5"
+  },
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
