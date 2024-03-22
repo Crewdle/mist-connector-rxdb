@@ -1,5 +1,5 @@
 import { RxDatabase, RxCollection, RxStorage, createRxDatabase, RxJsonSchema } from "rxdb";
-import { getRxStorageDexie } from "rxdb/dist/types/plugins/storage-dexie";
+import { getRxStorageDexie } from "rxdb/plugins/storage-dexie";
 
 import { IKeyValueDatabaseConnector, IDatabaseLayout, ITableLayout, IValueType, IKeyValueDatabaseTableConnector } from "@crewdle/web-sdk";
 import { transformToRxDBSchemas } from "helpers";
