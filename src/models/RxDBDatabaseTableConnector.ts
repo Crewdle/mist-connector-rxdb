@@ -7,7 +7,7 @@ import { transformWhereClause } from "helpers";
 /**
  * The RxDB database table connector - Connect to a collection in an RxDB database.
  * @category Connector
- * @typeparam T The type of the value.
+ * @typeparam T The type of the data to serialize.
  */
 export class RxDBDatabaseTableConnector<T extends IValueType> implements IKeyValueDatabaseTableConnector<T> {
   constructor(private readonly collection: RxCollection<T>) {}

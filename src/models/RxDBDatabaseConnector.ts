@@ -3,7 +3,7 @@ import { getRxStorageDexie } from "rxdb/plugins/storage-dexie";
 
 import { IKeyValueDatabaseConnector, IDatabaseLayout, IDatabaseTableLayout, IValueType, IKeyValueDatabaseTableConnector } from "@crewdle/web-sdk-types";
 import { transformToRxDBSchemas } from "helpers";
-import { RxDBDatabaseTableConnector } from "./RxDBDatabaseTableConnector";
+import { RxDBDatabaseTableConnector } from "models/RxDBDatabaseTableConnector";
 
 
 /**

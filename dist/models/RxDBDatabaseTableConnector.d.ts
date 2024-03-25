@@ -3,7 +3,7 @@ import { IValueType, IKeyValueDatabaseTableConnector, IDatabaseTableQuery } from
 /**
  * The RxDB database table connector - Connect to a collection in an RxDB database.
  * @category Connector
- * @typeparam T The type of the value.
+ * @typeparam T The type of the data to serialize.
  */
 export declare class RxDBDatabaseTableConnector<T extends IValueType> implements IKeyValueDatabaseTableConnector<T> {
     private readonly collection;
