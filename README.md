@@ -17,12 +17,20 @@ npm install @crewdle/mist-connector-rxdb
 ## Usage
 
 ```TypeScript
-import { RxDBDatabaseTableConnector } from '@crewdle/mist-connector-rxdb';
+import { getRxDBDatabaseConnector } from '@crewdle/mist-connector-rxdb';
 
 // Create a new SDK instance
 const sdk = await SDK.getInstance('[VENDOR ID]', '[ACCESS TOKEN]', {
-  keyValueDatabaseConnector: RxDBDatabaseTableConnector,
+  keyValueDatabaseConnector: getRxDBDatabaseConnector(),
 });
+```
+
+The connector uses Dexie as a default storage but options can be passed to the function to specify a storage such as IndexedDB:
+
+```TypeScript
+getRxDBDatabaseConnector(options: {
+  storage: getRxStorageIndexedDB()
+})
 ```
 
 ## Need Help?

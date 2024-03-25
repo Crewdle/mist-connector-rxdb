@@ -1,6 +1,6 @@
 import { IDatabaseLayout } from '@crewdle/web-sdk';
 import { RxDBDatabaseConnector } from 'models/RxDBDatabaseConnector';
-import { addRxPlugin } from 'rxdb';
+import { addRxPlugin, RxStorage } from 'rxdb';
 import { RxDBMigrationPlugin } from 'rxdb/plugins/migration-schema';
 import { RxDBQueryBuilderPlugin } from 'rxdb/plugins/query-builder';
 
@@ -8,7 +8,7 @@ addRxPlugin(RxDBQueryBuilderPlugin);
 addRxPlugin(RxDBMigrationPlugin);
 
 export interface IRxDBOptions {
-  storage?: any;
+  storage?: RxStorage<unknown, unknown>;
 }
 
 export function getRxDBDatabaseConnector(options?: IRxDBOptions) {
