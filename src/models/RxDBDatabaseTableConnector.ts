@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { RxCollection, MangoQuerySortPart } from "rxdb";
 
-import { IValueType, IKeyValueDatabaseTableConnector, IDatabaseTableQuery } from "@crewdle/web-sdk";
+import { IValueType, IKeyValueDatabaseTableConnector, IDatabaseTableQuery } from "@crewdle/web-sdk-types";
 import { transformWhereClause } from "helpers";
 
 /**

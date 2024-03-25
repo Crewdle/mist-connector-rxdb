@@ -1,5 +1,5 @@
 import { RxCollection } from "rxdb";
-import { IValueType, IKeyValueDatabaseTableConnector, IDatabaseTableQuery } from "@crewdle/web-sdk";
+import { IValueType, IKeyValueDatabaseTableConnector, IDatabaseTableQuery } from "@crewdle/web-sdk-types";
 /**
  * The RxDB database table connector - Connect to a collection in an RxDB database.
  * @category Connector

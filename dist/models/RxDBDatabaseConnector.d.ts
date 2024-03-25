@@ -1,4 +1,4 @@
-import { IKeyValueDatabaseConnector, IDatabaseLayout, IValueType, IKeyValueDatabaseTableConnector } from "@crewdle/web-sdk";
+import { IKeyValueDatabaseConnector, IDatabaseLayout, IValueType, IKeyValueDatabaseTableConnector } from "@crewdle/web-sdk-types";
 /**
  * The RxDB key-value database connector - Connect to an RxDB database.
  * @category Connector

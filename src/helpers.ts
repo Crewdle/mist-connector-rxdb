@@ -1,4 +1,4 @@
-import { IDatabaseLayout, IDatabaseTableQuery } from "@crewdle/web-sdk";
+import { IDatabaseLayout, IDatabaseTableQuery } from "@crewdle/web-sdk-types";
 import { RxJsonSchema } from "rxdb";
 
 /**

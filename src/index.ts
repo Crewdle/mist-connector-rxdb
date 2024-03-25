@@ -1,4 +1,4 @@
-import { IDatabaseLayout } from '@crewdle/web-sdk';
+import { IDatabaseLayout } from '@crewdle/web-sdk-types';
 import { RxDBDatabaseConnector } from 'models/RxDBDatabaseConnector';
 import { addRxPlugin, RxStorage } from 'rxdb';
 import { RxDBMigrationPlugin } from 'rxdb/plugins/migration-schema';

@@ -1,7 +1,7 @@
 import { RxDatabase, RxCollection, RxStorage, createRxDatabase, RxJsonSchema } from "rxdb";
 import { getRxStorageDexie } from "rxdb/plugins/storage-dexie";
 
-import { IKeyValueDatabaseConnector, IDatabaseLayout, ITableLayout, IValueType, IKeyValueDatabaseTableConnector } from "@crewdle/web-sdk";
+import { IKeyValueDatabaseConnector, IDatabaseLayout, IDatabaseTableLayout, IValueType, IKeyValueDatabaseTableConnector } from "@crewdle/web-sdk-types";
 import { transformToRxDBSchemas } from "helpers";
 import { RxDBDatabaseTableConnector } from "./RxDBDatabaseTableConnector";
 
@@ -33,7 +33,7 @@ export class RxDBDatabaseConnector implements IKeyValueDatabaseConnector {
 
     const rxdbSchemas = transformToRxDBSchemas(this.layout);
 
-    const collectionsToAdd: Record<string, { schema: RxJsonSchema<ITableLayout> }> = {};
+    const collectionsToAdd: Record<string, { schema: RxJsonSchema<IDatabaseTableLayout> }> = {};
     Object.entries(rxdbSchemas).forEach(([tableName, schema]) => {
       collectionsToAdd[tableName] = { schema };
     });
