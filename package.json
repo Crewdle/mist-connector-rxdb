@@ -1,6 +1,6 @@
 {
   "name": "@crewdle/mist-connector-rxdb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Crewdle Mist connector to use RxDB as a Key-Value Database",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
